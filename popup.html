@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Layout Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            width: 200px;
+        }
+        select, input, button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<h3>选择纸张设置</h3>
+<select id="paperSize">
+    <option value="A4">A4 (210mm x 297mm)</option>
+    <option value="6inch">6 Inch (102mm x 152mm)</option>
+</select>
+<select id="orientation">
+    <option value="portrait">纵向</option>
+    <option value="landscape">横向</option>
+</select>
+<input type="text" id="websiteName" placeholder="网站名称">
+<input type="url" id="websiteURL" placeholder="网站URL">
+<button id="generateBtn">生成布局</button>
+
+<!-- 引入 popup.js -->
+<script src="popup.js"></script>
+</body>
+</html>
